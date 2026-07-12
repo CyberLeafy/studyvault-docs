@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./static/img/logo.png" alt="StudyVault logo" width="120" >
+<img src="./static/img/final.png" alt="StudyVault logo" width="120" >
 <h1>Study Vault</h1>
 
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://https://studyvault-docs.netlify.app/)

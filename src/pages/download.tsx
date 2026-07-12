@@ -8,7 +8,7 @@ const DETAILS = [
   { label: "Minimum Android", value: "Android 10" },
   { label: "APK Size", value: "102 MB" },
   // { label: "Release Date", value: "July 2026" },
-  { label: "Version", value: "v1.0.0" },
+  { label: "Current Version", value: "v1.0.0" },
   // { label: "Offline Support", value: "Yes" },
 ];
 
@@ -62,7 +62,7 @@ export default function Download() {
               ))}
             </dl>
 
-            <Link className={styles.downloadButton} href="https://github.com/CyberLeafy/studyvault-docs/releases/latest">
+            <Link className={styles.downloadButton} href="https://github.com/CyberLeafy/studyvault-docs/releases/download/v1.0.0/StudyVault-v1.0.0.apk">
               <svg
                 width="18"
                 height="18"
@@ -78,7 +78,13 @@ export default function Download() {
                 <path d="M7 10l5 5 5-5" />
                 <path d="M5 21h14" />
               </svg>
-              Download APK
+              Download current version
+            </Link>
+            <Link
+              className={styles.notes}
+              href="https://github.com/CyberLeafy/studyvault-docs/releases/latest"
+            >
+              Release Notes
             </Link>
             <p>Last Update: July 2026</p>
           </div>

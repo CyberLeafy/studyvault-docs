@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://studyvault.netlify.app',
+  url: 'https://studyvault-docs.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -87,7 +87,7 @@ const config: Config = {
         },
         { to: '/download', label: 'Download', position: 'left' },
         {
-          href: 'https://github.com/CyberLeafy',
+          href: 'https://github.com/CyberLeafy/studyvault-docs/#overview',
           label: 'GitHub',
           position: 'right',
         },

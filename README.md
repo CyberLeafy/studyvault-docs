@@ -1,3 +1,4 @@
+<h6 id="overview">Overview</h6>
 <div align="center">
 <img src="./static/img/logo.png" alt="StudyVault logo" width="120" >
 <h1><strong>Study Vault</strong></h1>

@@ -1,41 +1,52 @@
-# Website
+<div align="center">
+<img src="./static/img/logo.png" alt="StudyVault logo" width="120" >
+<h1>Study Vault</h1>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://https://studyvault-docs.netlify.app/)
+[![Latest Release](https://img.shields.io/github/v/release/CyberLeafy/studyvault-docs)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest)
+</div>
 
-## Installation
+Official documentation and APK releases for **StudyVault**.
 
-```bash
-yarn
-```
+StudyVault is a modern Android app that helps you organize your study materials, subjects, chapters, and screenshots in one place.
 
-## Local Development
+## ✨ Features
 
-```bash
-yarn start
-```
+- 📚 Organize subjects and chapters
+- 📸 Save study screenshots securely
+- 📥 Import screenshots from other apps
+- 📅 Track your study progress
+- 🎨 Clean Design interface
+- ⚡ Fast and lightweight
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 📖 Documentation
 
-## Build
+Visit the official documentation:
 
-```bash
-yarn build
-```
+👉 [**Open Website**](https://https://studyvault-docs.netlify.app)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 📦 Download
 
-## Deployment
+Download the latest APK from GitHub Releases:
 
-Using SSH:
+👉 [**Download App**](https://github.com/CyberLeafy/studyvault-docs/releases/latest)
 
-```bash
-USE_SSH=true yarn deploy
-```
+## 🛠️ Tech Stack
 
-Not using SSH:
+- React Native
+- Expo
+- TypeScript
+- SQLite
+- Docusaurus
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## 🐛 Issues
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Found a bug or have a feature request?
+
+Please open an issue in this repository.
+
+---
+
+## ❤️ Thank You
+
+Thank you for using StudyVault!

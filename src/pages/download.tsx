@@ -31,7 +31,7 @@ const FEATURES = [
 export default function Download() {
   return (
     <Layout
-      title="Download StudyVault"
+      title="Download"
       description="Download the latest version of StudyVault."
     >
       <main className={styles.main}>

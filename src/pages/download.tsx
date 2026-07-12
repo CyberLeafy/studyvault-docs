@@ -6,7 +6,7 @@ import styles from "./download.module.css";
 const DETAILS = [
   { label: "Platform", value: "Android" },
   { label: "Minimum Android", value: "Android 10" },
-  { label: "APK Size", value: "35 MB" },
+  { label: "APK Size", value: "102 MB" },
   // { label: "Release Date", value: "July 2026" },
   { label: "Version", value: "v1.0.0" },
   // { label: "Offline Support", value: "Yes" },
@@ -62,7 +62,7 @@ export default function Download() {
               ))}
             </dl>
 
-            <Link className={styles.downloadButton} href="https://github.com/CyberLeafy">
+            <Link className={styles.downloadButton} href="https://github.com/CyberLeafy/studyvault-docs/releases/latest">
               <svg
                 width="18"
                 height="18"

@@ -1,6 +1,6 @@
 <div align="center">
-<img src="./static/img/final.png" alt="StudyVault logo" width="120" >
-<h1>Study Vault</h1>
+<img src="./static/img/logo.png" alt="StudyVault logo" width="120" >
+<h1><strong>Study Vault</strong></h1>
 
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://https://studyvault-docs.netlify.app/)
 [![Latest Release](https://img.shields.io/github/v/release/CyberLeafy/studyvault-docs)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest)
@@ -45,7 +45,7 @@ Found a bug or have a feature request?
 
 Please open an issue in this repository.
 
----
+
 
 ## ❤️ Thank You
 

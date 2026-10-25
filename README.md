@@ -17,6 +17,7 @@ StudyVault is a modern Android app that helps you organize your study materials,
 - 📸 Save study screenshots securely
 - 📥 Import screenshots from other apps
 - 📅 Track your study progress
+- 📑 Setup your test planner
 - 🎨 Clean Design interface
 - ⚡ Fast and lightweight
 

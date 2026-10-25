@@ -1,0 +1,969 @@
+/* StudyVault landing page — colors inherit from Docusaurus custom.css */
+
+.home {
+  overflow: hidden;
+  color: var(--ifm-font-color-base);
+}
+
+.hero {
+  position: relative;
+  padding: 76px 0 0;
+  background:
+    radial-gradient(ellipse at 78% 23%, color-mix(in srgb, var(--ifm-color-primary) 12%, transparent), transparent 36%),
+    linear-gradient(180deg, var(--ifm-background-color), var(--ifm-background-surface-color));
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.35;
+  background-image: radial-gradient(var(--ifm-color-emphasis-300) 0.7px, transparent 0.7px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, black, transparent 70%);
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(350px, 0.96fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 88px);
+}
+
+.heroCopy {
+  max-width: 650px;
+  padding: 25px 0 45px;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ifm-color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.eyebrow {
+  padding: 9px 13px;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 7%, var(--ifm-background-color));
+}
+
+.eyebrowDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ifm-color-primary) 13%, transparent);
+}
+
+.title {
+  max-width: 680px;
+  margin: 25px 0 20px;
+  font-size: clamp(2.8rem, 5.2vw, 4.65rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.titleAccent {
+  color: var(--ifm-color-primary);
+}
+
+.subtitle {
+  max-width: 590px;
+  margin: 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: clamp(1rem, 1.5vw, 1.14rem);
+  line-height: 1.85;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px;
+  margin-top: 29px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 50px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.primaryButton {
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent);
+  text-decoration: none;
+}
+
+.secondaryButton {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+}
+
+.secondaryButton:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.trustLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 27px;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.78rem;
+}
+
+.checkmark {
+  color: var(--ifm-color-primary);
+  font-weight: 900;
+}
+
+.trustDivider {
+  margin: 0 3px;
+  color: var(--ifm-color-emphasis-400);
+}
+
+.heroVisual {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 530px;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.orb {
+  position: absolute;
+  z-index: -1;
+  width: min(92%, 450px);
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--ifm-color-primary) 14%, transparent), color-mix(in srgb, var(--ifm-color-primary) 4%, transparent) 48%, transparent 70%);
+}
+
+.orb::before,
+.orb::after {
+  position: absolute;
+  inset: 9%;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  border-radius: 50%;
+  content: "";
+}
+
+.orb::after {
+  inset: 19%;
+}
+
+.appWindow {
+  width: min(100%, 370px);
+  padding: 23px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 25px;
+  background: var(--ifm-background-color);
+  box-shadow: 0 32px 90px color-mix(in srgb, var(--ifm-color-primary-darkest) 15%, transparent), 0 5px 20px color-mix(in srgb, var(--ifm-color-primary-darkest) 6%, transparent);
+  transform: rotate(2deg);
+  transition: transform 220ms ease;
+}
+
+.heroVisual:hover .appWindow {
+  transform: rotate(0) translateY(-4px);
+}
+
+.appTopbar,
+.appBrand,
+.progressTop,
+.progressFooter,
+.subjectRow,
+.appBottom {
+  display: flex;
+  align-items: center;
+}
+
+.appTopbar,
+.progressTop,
+.progressFooter {
+  justify-content: space-between;
+}
+
+.appBrand {
+  gap: 10px;
+}
+
+.appLogo {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  color: white;
+  background: linear-gradient(140deg, var(--ifm-color-primary-light), var(--ifm-color-primary-dark));
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.appName,
+.appCaption {
+  display: block;
+}
+
+.appName {
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.appCaption,
+.mutedLabel {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.57rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.menuDots {
+  color: var(--ifm-color-emphasis-500);
+  letter-spacing: 2px;
+}
+
+.appWelcome {
+  padding: 27px 0 18px;
+}
+
+.appGreeting {
+  color: var(--ifm-color-primary);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.appHeading {
+  margin: 5px 0 4px;
+  font-size: 1.55rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.appWelcome p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.75rem;
+}
+
+.progressCard {
+  padding: 15px;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 16%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-color));
+}
+
+.progressTop strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+.collectionCount {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 11px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 13%, transparent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.progressTrack {
+  height: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.progressTrack span {
+  display: block;
+  width: 72%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--ifm-color-primary);
+}
+
+.progressFooter {
+  gap: 8px;
+  margin-top: 9px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.62rem;
+}
+
+.progressSpark {
+  color: var(--ifm-color-primary);
+}
+
+.subjectList {
+  display: grid;
+  gap: 5px;
+  margin-top: 14px;
+}
+
+.subjectRow {
+  gap: 11px;
+  padding: 10px 4px;
+}
+
+.subjectIcon {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.subjectViolet {
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 13%, transparent);
+}
+
+.subjectBlue {
+  color: #4384c8;
+  background: color-mix(in srgb, #4384c8 13%, var(--ifm-background-color));
+}
+
+.subjectPeach {
+  color: #c47d49;
+  background: color-mix(in srgb, #d99561 16%, var(--ifm-background-color));
+}
+
+.subjectText {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.subjectText strong {
+  font-size: 0.76rem;
+}
+
+.subjectText span {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.65rem;
+}
+
+.subjectArrow {
+  margin-left: auto;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.appBottom {
+  justify-content: space-around;
+  gap: 10px;
+  margin: 13px -2px -2px;
+  padding-top: 15px;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.61rem;
+}
+
+.appBottom span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.appBottom i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-400);
+}
+
+.appBottom .navActive {
+  background: var(--ifm-color-primary);
+}
+
+.floatingLabel,
+.floatingNote {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+  background: var(--ifm-background-color);
+  box-shadow: 0 12px 35px color-mix(in srgb, var(--ifm-color-primary-darkest) 10%, transparent);
+}
+
+.floatingLabel {
+  top: 12%;
+  right: -2%;
+  padding: 11px 14px;
+  color: var(--ifm-font-color-base);
+  font-size: 0.72rem;
+  font-weight: 700;
+  transform: rotate(-4deg);
+}
+
+.labelIcon {
+  color: var(--ifm-color-primary);
+  font-size: 1.1rem;
+}
+
+.floatingNote {
+  bottom: 10%;
+  left: -4%;
+  padding: 12px 15px;
+}
+
+.noteCheck {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  font-weight: 900;
+}
+
+.floatingNote strong,
+.floatingNote small {
+  display: block;
+}
+
+.floatingNote strong {
+  font-size: 0.73rem;
+}
+
+.floatingNote small {
+  margin-top: 2px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.64rem;
+}
+
+.highlights {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 16px;
+  text-align: center;
+}
+
+.highlight+.highlight {
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.highlight strong {
+  color: var(--ifm-color-primary);
+  font-size: 1.08rem;
+}
+
+.highlight span {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.76rem;
+}
+
+.introSection {
+  padding: 100px 0 75px;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: clamp(35px, 8vw, 120px);
+}
+
+.sectionTitle {
+  margin: 14px 0 0;
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.introCopy p,
+.workflowCopy>p {
+  margin: 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.textLink,
+.ctaTextLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+  color: var(--ifm-color-primary);
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.textLink:hover,
+.ctaTextLink:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+.featuresSection {
+  padding: 78px 0 95px;
+  background: var(--ifm-background-surface-color);
+}
+
+.sectionHeader {
+  max-width: 690px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.sectionHeader>p {
+  max-width: 570px;
+  margin: 15px auto 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.featureCard {
+  position: relative;
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  padding: 25px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  background: var(--ifm-background-color);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 45%, var(--ifm-color-emphasis-200));
+  box-shadow: 0 16px 36px color-mix(in srgb, var(--ifm-color-primary-darkest) 7%, transparent);
+}
+
+.featureCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featureIcon {
+  display: grid;
+  width: 47px;
+  height: 47px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 17%, transparent);
+  border-radius: 14px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 9%, var(--ifm-background-color));
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.featureIndex {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.featureTitle {
+  margin: 21px 0 8px;
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.featureCard p {
+  margin: 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.84rem;
+  line-height: 1.8;
+}
+
+.featureRule {
+  width: 34px;
+  height: 3px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-bottom: 3px solid color-mix(in srgb, var(--ifm-color-primary) 40%, transparent);
+  transition: width 180ms ease;
+}
+
+.featureCard:hover .featureRule {
+  width: 65px;
+}
+
+.workflowSection {
+  padding: 100px 0;
+}
+
+.workflowPanel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(35px, 8vw, 100px);
+  padding: clamp(27px, 5vw, 58px);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 26px;
+  background:
+    radial-gradient(ellipse at 0% 0%, color-mix(in srgb, var(--ifm-color-primary) 9%, transparent), transparent 48%),
+    var(--ifm-background-surface-color);
+}
+
+.workflowCopy .sectionTitle {
+  margin-bottom: 18px;
+}
+
+.workflowSteps {
+  display: grid;
+  align-content: center;
+}
+
+.workflowStep {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  gap: 15px;
+  padding: 19px 0;
+}
+
+.workflowStep+.workflowStep {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.workflowStep>span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 20%, transparent);
+  border-radius: 13px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-color));
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.workflowStep strong {
+  font-size: 0.98rem;
+}
+
+.workflowStep p {
+  margin: 5px 0 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+.ctaSection {
+  padding: 0 0 100px;
+}
+
+.ctaCard {
+  position: relative;
+  padding: clamp(35px, 7vw, 75px) 25px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--ifm-color-primary) 15%, transparent), transparent 60%),
+    var(--ifm-background-surface-color);
+  text-align: center;
+}
+
+.ctaDecor {
+  position: absolute;
+  top: 20px;
+  right: 8%;
+  color: color-mix(in srgb, var(--ifm-color-primary) 20%, transparent);
+  font-size: 5rem;
+  transform: rotate(15deg);
+}
+
+.ctaTitle {
+  position: relative;
+  max-width: 720px;
+  margin: 15px auto 12px;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.ctaCard>p {
+  margin: 0;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.95rem;
+}
+
+.ctaCard .actions {
+  justify-content: center;
+}
+
+.ctaTextLink {
+  margin: 0 0 0 8px;
+}
+
+@media (max-width: 996px) {
+  .hero {
+    padding-top: 45px;
+  }
+
+  .heroContainer {
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 0.85fr);
+    gap: 25px;
+  }
+
+  .title {
+    font-size: clamp(2.6rem, 5.5vw, 3.8rem);
+  }
+
+  .heroVisual {
+    min-height: 475px;
+  }
+
+  .appWindow {
+    padding: 19px;
+  }
+
+  .floatingLabel {
+    right: -1%;
+  }
+
+  .floatingNote {
+    left: -1%;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .introGrid,
+  .workflowPanel {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 32px;
+  }
+
+  .heroContainer,
+  .introGrid,
+  .workflowPanel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .heroCopy {
+    padding: 15px 0 0;
+  }
+
+  .title {
+    max-width: 560px;
+    margin-top: 22px;
+    font-size: clamp(2.55rem, 11vw, 3.65rem);
+  }
+
+  .subtitle {
+    font-size: 0.98rem;
+  }
+
+  .actions {
+    align-items: stretch;
+  }
+
+  .actions>a {
+    justify-content: center;
+  }
+
+  .trustLine {
+    gap: 7px;
+    font-size: 0.72rem;
+  }
+
+  .heroVisual {
+    min-height: 480px;
+    margin-top: -8px;
+  }
+
+  .appWindow {
+    width: min(88%, 370px);
+  }
+
+  .floatingLabel {
+    top: 7%;
+    right: 0;
+  }
+
+  .floatingNote {
+    bottom: 5%;
+    left: 0;
+  }
+
+  .highlights {
+    margin-top: 5px;
+  }
+
+  .highlight {
+    padding: 4px 8px;
+  }
+
+  .highlight strong {
+    font-size: 0.95rem;
+  }
+
+  .highlight span {
+    font-size: 0.67rem;
+  }
+
+  .introSection {
+    padding: 70px 0 55px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+  }
+
+  .introGrid {
+    gap: 22px;
+  }
+
+  .featuresSection {
+    padding: 65px 0;
+  }
+
+  .featureGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .featureCard {
+    min-height: 205px;
+  }
+
+  .workflowSection {
+    padding: 65px 0;
+  }
+
+  .workflowPanel {
+    gap: 24px;
+    padding: 27px 22px;
+  }
+
+  .ctaSection {
+    padding-bottom: 65px;
+  }
+
+  .ctaCard {
+    padding: 45px 22px;
+  }
+
+  .ctaDecor {
+    top: 4px;
+    right: 5%;
+    font-size: 3.5rem;
+  }
+
+  .ctaCard .actions {
+    flex-direction: column;
+  }
+
+  .ctaTextLink {
+    justify-content: center;
+    margin: 6px 0 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .heroVisual {
+    min-height: 435px;
+  }
+
+  .appWindow {
+    width: 94%;
+    padding: 15px;
+  }
+
+  .floatingLabel {
+    font-size: 0.64rem;
+  }
+
+  .floatingNote {
+    padding: 9px 11px;
+  }
+
+  .trustLine {
+    max-width: 320px;
+  }
+
+  .trustDivider {
+    margin: 0;
+  }
+
+  .highlight span {
+    font-size: 0.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .primaryButton,
+  .secondaryButton,
+  .appWindow,
+  .featureCard,
+  .featureRule {
+    transition: none;
+  }
+}

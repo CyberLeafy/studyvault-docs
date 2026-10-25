@@ -1,12 +1,13 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { siteConfig } from './src/config/siteConfig';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'StudyVault',
-  tagline: 'Organize your study materials with ease.',
+  title: siteConfig.app.name,
+  tagline: siteConfig.app.tagLine,
   favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +16,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://studyvault-docs.netlify.app',
+  url: siteConfig.urls.website,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'CyberLeafy', // Usually your GitHub org/user name.
-  projectName: 'StudyVault', // Usually your repo name.
+  organizationName: siteConfig.project.organization, // Usually your GitHub org/user name.
+  projectName: siteConfig.project.name, // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -85,11 +86,13 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        { to: '/download', label: 'Download', position: 'left' },
+        { to: siteConfig.urls.download, label: 'Download', position: 'left' },
         {
-          href: 'https://github.com/CyberLeafy/studyvault-docs/#overview',
+          href: siteConfig.project.repository,
           label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -101,11 +104,11 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/getting-started/installation',
+              to: siteConfig.urls.documentation,
             },
             {
               label: 'Guide',
-              to: '/docs/guide/subject'
+              to: siteConfig.urls.guide
             },
           ],
         },
@@ -114,29 +117,29 @@ const config: Config = {
           items: [
             {
               label: 'Download',
-              to: '/download'
+              to: siteConfig.urls.download
             },
             {
               label: 'FAQ',
-              to: '/docs/faq'
+              to: siteConfig.urls.faq
             },
             {
               label: 'Privacy Policy',
-              to: '/docs/privacy-policy'
+              to: siteConfig.urls.privacyPolicy
             },
           ],
         },
         {
-          title: 'Devloper',
+          title: 'Developer',
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/CyberLeafy',
+              href: siteConfig.developer.github,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Study Vault. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${siteConfig.app.name}. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

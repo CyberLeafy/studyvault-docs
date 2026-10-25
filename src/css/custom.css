@@ -1,27 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* ================================
+   Light Theme
+================================ */
 :root {
-  --ifm-color-primary: #4f46e5;
-  --ifm-color-primary-dark: #4338ca;
-  --ifm-color-primary-darker: #3730a3;
-  --ifm-color-primary-darkest: #312e81;
-  --ifm-color-primary-light: #6366f1;
-  --ifm-color-primary-lighter: #818cf8;
-  --ifm-color-primary-lightest: #a5b4fc;
+  /* Primary Violet */
+  --ifm-color-primary: #8054d8;
+  --ifm-color-primary-dark: #7044c5;
+  --ifm-color-primary-darker: #6037b4;
+  --ifm-color-primary-darkest: #4b278f;
+  --ifm-color-primary-light: #956fe2;
+  --ifm-color-primary-lighter: #b49aee;
+  --ifm-color-primary-lightest: #ded2f8;
 
-  --ifm-code-font-size: 95%;
+  /* Fonts */
   --ifm-font-family-base: "Poppins", sans-serif;
-  --docusaurus-highlighted-code-line-bg: rgba(79, 70, 229, 0.1);
+  --ifm-heading-font-family: "Outfit", "Bricolage Grotesque", "Lilita One", cursive;
+  --ifm-code-font-size: 95%;
+
+  /* Backgrounds */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #faf8ff;
+
+  /* Borders and emphasis */
+  --ifm-color-emphasis-100: #f3effb;
+  --ifm-color-emphasis-200: #e7def6;
+  --ifm-color-emphasis-600: #746b83;
+
+  /* Links */
+  --ifm-link-color: #7044c5;
+  --ifm-link-hover-color: #4b278f;
+
+  /* Code highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(128, 84, 216, 0.1);
+
+  /* UI */
+  --ifm-button-border-radius: 10px;
+  --ifm-global-radius: 12px;
 }
 
+/* ================================
+   Dark Theme
+================================ */
 [data-theme='dark'] {
-  --ifm-color-primary: #818cf8;
-  --ifm-color-primary-dark: #6366f1;
-  --ifm-color-primary-darker: #4f46e5;
-  --ifm-color-primary-darkest: #4338ca;
-  --ifm-color-primary-light: #a5b4fc;
-  --ifm-color-primary-lighter: #c7d2fe;
-  --ifm-color-primary-lightest: #e0e7ff;
+  /* Primary Violet */
+  --ifm-color-primary: #b49aee;
+  --ifm-color-primary-dark: #a184e8;
+  --ifm-color-primary-darker: #956fe2;
+  --ifm-color-primary-darkest: #8054d8;
+  --ifm-color-primary-light: #c7b4f3;
+  --ifm-color-primary-lighter: #d8caf8;
+  --ifm-color-primary-lightest: #e9e0fc;
 
-  --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.2);
+  /* Backgrounds */
+  --ifm-background-color: #15121c;
+  --ifm-background-surface-color: #201a2b;
+
+  /* Borders and emphasis */
+  --ifm-color-emphasis-100: #292235;
+  --ifm-color-emphasis-200: #393047;
+  --ifm-color-emphasis-600: #b6abc9;
+
+  /* Links */
+  --ifm-link-color: #b49aee;
+  --ifm-link-hover-color: #d8caf8;
+
+  /* Code highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(180, 154, 238, 0.18);
+}
+
+
+/* StudyVault footer — theme-aware */
+.footer {
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer__title {
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: var(--ifm-color-emphasis-600);
+  transition: color 180ms ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.85rem;
 }

@@ -65,6 +65,19 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      },
+    ],
+  ],
+
 
   themeConfig: {
     // Replace with your project's social card
@@ -89,7 +102,6 @@ const config: Config = {
         { to: siteConfig.urls.download, label: 'Download', position: 'left' },
         {
           href: siteConfig.project.repository,
-          label: 'GitHub',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',

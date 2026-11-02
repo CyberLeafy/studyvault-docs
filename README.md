@@ -1,10 +1,10 @@
 <h6 id="overview">Overview</h6>
 <div align="center">
-<img src="./static/img/logo.png" alt="StudyVault logo" width="120" >
+<img src="./logo/logo.png" alt="StudyVault logo" width="120" >
 <h1><strong>Study Vault</strong></h1>
 
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://https://studyvault-docs.netlify.app/)
-[![Latest Release](https://img.shields.io/github/v/release/CyberLeafy/studyvault-docs)](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/CyberLeafy/studyvault-docs)](https://github.com/CyberLeafy/studyvault-docs/releases/latest)
 </div>
 
 Official documentation and APK releases for **StudyVault**.

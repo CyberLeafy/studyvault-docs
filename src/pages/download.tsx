@@ -7,7 +7,7 @@ import { siteConfig } from "@site/src/config/siteConfig";
 const DETAILS = [
   { label: "Platform", value: "Android", icon: "smartphone" },
   { label: "Minimum OS", value: "Android 10+", icon: "layers" },
-  { label: "Download Size", value: "102 MB", icon: "package" },
+  { label: "Download Size", value: `${siteConfig.app.appSize}`, icon: "package" },
   { label: "Offline Access", value: "Available", icon: "wifi" },
 ];
 

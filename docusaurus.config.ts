@@ -142,10 +142,10 @@ const config: Config = {
           ],
         },
         {
-          title: 'Developer',
+          title: 'Developed by',
           items: [
             {
-              label: 'GitHub',
+              label: 'JaisuVerse',
               href: siteConfig.developer.github,
             },
           ],

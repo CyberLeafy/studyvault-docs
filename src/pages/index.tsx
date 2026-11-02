@@ -66,7 +66,7 @@ export default function Home(): JSX.Element {
               </div>
 
               <Heading as="h1" className={styles.title}>
-                Turn scattered screenshots into{" "}
+                Turn scattered screenshots & PDFs into{" "}
                 <span className={styles.titleAccent}>organized knowledge.</span>
               </Heading>
 

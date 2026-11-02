@@ -125,6 +125,27 @@ Yes. StudyVault does not require an account or sign-in.
 <details>
   <summary>Is my data private?</summary>
 
-Yes. Your screenshots and study data remain on your device. StudyVault does not collect or upload your personal data.
+Yes. Your screenshots, PDFs, and study data remain on your device. StudyVault does not collect or upload your personal data.
+
+</details>
+
+<details>
+  <summary>Can I save PDFs in StudyVault?</summary>
+
+Yes. You can add PDFs to any section using the **+ add file** button, or share them directly from apps like Files or Drive using the Share menu. PDFs are stored locally on your device, right next to your screenshots.
+
+</details>
+
+<details>
+  <summary>Can I import PDFs and screenshots together?</summary>
+
+Yes. You can select images and PDFs in the same share and save them to a section in one go. They appear together in the section, and you can use the **All**, **Images**, and **PDFs** filters to view them separately.
+
+</details>
+
+<details>
+  <summary>Do PDFs work offline?</summary>
+
+Yes. Once a PDF is saved in StudyVault, you can open it anytime without an internet connection.
 
 </details>

@@ -10,19 +10,19 @@ const features = [
     icon: "↗",
     title: "Share to Import",
     description:
-      "Send screenshots straight from any Android app using the Share menu. Save them without the extra steps.",
+      "Send screenshots and PDFs straight from any Android app using the Share menu. Save them without the extra steps.",
   },
   {
     icon: "▦",
     title: "Smart Organization",
     description:
-      "Build a clear structure with Subjects, Chapters, and Sections so every screenshot has its place.",
+      "Build a clear structure with Subjects, Chapters, and Sections so every screenshot and PDF has its place.",
   },
   {
     icon: "▣",
-    title: "Screenshot Gallery",
+    title: "Built-in Viewer",
     description:
-      "Browse your study material in one place. Open, zoom, swipe, and revisit screenshots whenever you need.",
+      "Browse your study material in one place. Open, zoom, swipe through screenshots, and read your PDFs without leaving the app.",
   },
   {
     icon: "◷",
@@ -34,13 +34,13 @@ const features = [
     icon: "⌁",
     title: "Works Offline",
     description:
-      "Your study library is available without an internet connection, whether you're at home or on the go.",
+      "Your screenshots and PDFs are available without an internet connection, whether you're at home or on the go.",
   },
   {
     icon: "◇",
     title: "Privacy First",
     description:
-      "Your screenshots and study materials stay on your device, giving you more control over your content.",
+      "Your screenshots, PDFs, and study materials stay on your device, giving you more control over your content.",
   },
 ];
 
@@ -201,8 +201,8 @@ export default function Home(): JSX.Element {
             </div>
             <div className={styles.introCopy}>
               <p>
-                Useful study screenshots can quickly get lost among everyday
-                photos. StudyVault gives them a dedicated home, so you can
+                Useful study screenshots and PDFs can quickly get lost among everyday
+                photos and files. StudyVault gives them a dedicated home, so you can
                 organize what matters and find it when it is time to revise.
               </p>
               <Link className={styles.textLink} to="/docs/getting-started/installation">
@@ -246,7 +246,7 @@ export default function Home(): JSX.Element {
             <div className={styles.workflowCopy}>
               <span className={styles.sectionEyebrow}>A SIMPLE WORKFLOW</span>
               <Heading as="h2" className={styles.sectionTitle}>
-                From screenshot to study-ready in a few steps.
+                From screenshots and PDFs to study-ready in a few steps.
               </Heading>
               <p>
                 Keep your process simple: save the material, place it where it
@@ -256,7 +256,7 @@ export default function Home(): JSX.Element {
             <div className={styles.workflowSteps}>
               <div className={styles.workflowStep}>
                 <span>01</span>
-                <div><strong>Share</strong><p>Send a screenshot to StudyVault from another app.</p></div>
+                <div><strong>Share</strong><p>Send a screenshot or PDF to StudyVault from another app.</p></div>
               </div>
               <div className={styles.workflowStep}>
                 <span>02</span>

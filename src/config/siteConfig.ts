@@ -4,9 +4,9 @@ export const siteConfig = {
   app: {
     name: "StudyVault",
     tagLine: "Organize your study materials with ease.",
-    version: "1.1.0",
+    version: "1.2.0",
     releaseDate: "July 2026",
-    updateDate: "August 2026",
+    updateDate: "02 Navomber 2026",
     platform: "Android",
   },
 

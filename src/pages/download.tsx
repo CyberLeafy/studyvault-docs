@@ -52,13 +52,13 @@ const FEATURES = [
   },
   {
     icon: "gallery",
-    title: "Screenshot gallery",
-    description: "Keep study screenshots organized in one place.",
+    title: "Image & PDF gallery",
+    description: "Keep study screenshots and PDFs organized in one place.",
   },
   {
     icon: "chart",
-    title: "Study tracker",
-    description: "Keep track of your study activity.",
+    title: "Day tracker & planner",
+    description: "Track your study days and plan your tests and tasks.",
   },
   {
     icon: "shield",

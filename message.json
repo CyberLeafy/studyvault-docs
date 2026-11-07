@@ -1,6 +1,6 @@
 {
   "keyVersion": "v0",
-  "show": false,
+  "show": true,
   "title": "StudyVault Update Available! 🎉",
   "messageType": "info",
   "message": "We've released a new update with improvements and fixes to make your study experience better.\n\nPlease update the app to the latest version and enjoy a smoother experience.\n\nThank you for using StudyVault! 💙"

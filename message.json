@@ -1,7 +1,7 @@
 {
-  "keyVersion": "v2",
+  "keyVersion": "v1",
   "show": true,
-  "title": "Happy Diwali from StudyVault! 🪔",
+  "title": "New in StudyVault: Todo Calendar! 📅",
   "messageType": "info",
-  "message": "May this Diwali bring happiness, prosperity, and success into your life! ✨\n\n🪔 May your days be filled with positivity,\n🪷 May your dreams shine brighter,\n🎆 May your hard work lead you to success.\n\n📚 Keep learning,\n💡 Keep growing,\n🌟 Keep shining!\n\nThank you for being a part of StudyVault.\n\nWishing you and your family a very Happy and Prosperous Diwali! 💙\n\nWith love,\nStudyVault"
+  "message": "Thanks for updating to v1.3.0! Here's what's new:\n\n✅ Todo Calendar\nPlan your study tasks date by date.\n\n📍 How to access:\n• Tap any date on calender.\n\n📝 How to use:\n• If todos exist for that date, a popup shows them. You can mark them complete or add another one.\n• If no todo exists, the popup lets you create one right away.\n\n🎨 What the dots mean:\n🟡 Yellow dot: pending todos on that date.\n🟢 Green dot: completed todos on that date.\n\n🏠 Home Summary:\nPending todos for today are shown in the summary on your home screen. Completed todos appear only as a green dot on the calendar.\n\n✏️ Also new: you can now rename or delete any subject.\n\nHappy studying! 💙"
 }
